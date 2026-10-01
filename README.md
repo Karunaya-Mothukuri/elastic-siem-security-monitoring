@@ -119,21 +119,16 @@ Through this project, I gained practical experience with:
 * Add IP-based threat intelligence
 * Add automated alert notifications
 * Integrate additional security data sources
-
 ## Project Screenshots
 
 ### SIEM Dashboard
 
-![SIEM Dashboard](screenshots/dashboard.png)
+![SIEM Dashboard](sample-logs/detection-rules/docs/dashboard.png.jpeg)
 
 ### Failed Login Detection Rule
 
-![Detection Rule](screenshots/detection-rule.png)
+![Detection Rule](sample-logs/detection-rules/docs/detection-rule.png)
 
 ### Security Alert
 
-![Security Alert](screenshots/alert.png)
-
-## Disclaimer
-
-This project was created as a local cybersecurity learning and demonstration environment. All testing was performed using controlled test data.
+![Security Alert](sample-logs/detection-rules/docs/alert.png.jpeg)
