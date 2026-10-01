@@ -122,3 +122,16 @@ Through this project, I gained practical experience with:
 ## Disclaimer
 
 This project was created as a local cybersecurity learning and demonstration environment. All testing was performed using controlled test data.
+## Project Screenshots
+
+### SIEM Dashboard
+
+![SIEM Dashboard](screenshots/dashboard.png)
+
+### Failed Login Detection Rule
+
+![Detection Rule](screenshots/detection-rule.png)
+
+### Security Alert
+
+![Security Alert](screenshots/alert.png)
