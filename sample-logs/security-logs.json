@@ -1,0 +1,62 @@
+[
+  {
+    "@timestamp": "2026-09-29T23:01:00Z",
+    "event": {
+      "category": ["authentication"],
+      "action": "login",
+      "outcome": "failure"
+    },
+    "source": {
+      "ip": "192.168.1.50"
+    },
+    "user": {
+      "name": "admin"
+    },
+    "message": "Failed login attempt for admin"
+  },
+  {
+    "@timestamp": "2026-09-29T23:02:00Z",
+    "event": {
+      "category": ["authentication"],
+      "action": "login",
+      "outcome": "failure"
+    },
+    "source": {
+      "ip": "192.168.1.50"
+    },
+    "user": {
+      "name": "admin"
+    },
+    "message": "Failed login attempt for admin"
+  },
+  {
+    "@timestamp": "2026-09-29T23:03:00Z",
+    "event": {
+      "category": ["authentication"],
+      "action": "login",
+      "outcome": "failure"
+    },
+    "source": {
+      "ip": "10.0.0.25"
+    },
+    "user": {
+      "name": "john"
+    },
+    "message": "Failed login attempt for john"
+  },
+  {
+    "@timestamp": "2026-09-29T23:04:00Z",
+    "event": {
+      "category": ["authentication"],
+      "action": "login",
+      "outcome": "success"
+    },
+    "source": {
+      "ip": "10.0.0.25"
+    },
+    "user": {
+      "name": "john"
+    },
+    "message": "Successful login for john"
+  }
+]
