@@ -22,35 +22,38 @@ Kibana / Elastic Security
 Detection Rule
       ↓
 Failed Login Alert
+```
+
 ## Technologies Used
 
-- Elasticsearch 9.5.4
-- Kibana 9.5.4
-- Elastic Security
-- Docker Desktop
-- KQL
-- JSON
-- Windows
+* Elasticsearch 9.5.4
+* Kibana 9.5.4
+* Elastic Security
+* Docker Desktop
+* KQL
+* JSON
+* Windows
 
 ## Key Features
 
-- Security log ingestion
-- Log normalization
-- Security monitoring dashboard
-- Login success/failure analysis
-- Top source IP tracking
-- Login activity over time
-- Custom KQL detection rule
-- Failed authentication detection
-- Security alert generation
+* Security log ingestion
+* Log normalization
+* Security monitoring dashboard
+* Login success/failure analysis
+* Top source IP tracking
+* Login activity over time
+* Custom KQL detection rule
+* Failed authentication detection
+* Security alert generation
+
 ## Dashboard
 
 The dashboard provides security monitoring views including:
 
-- Total login attempts
-- Failed vs successful logins
-- Top source IP addresses
-- Login activity over time
+* Total login attempts
+* Failed vs successful logins
+* Top source IP addresses
+* Login activity over time
 
 ## Detection Rule
 
@@ -60,20 +63,18 @@ The project uses the following KQL query:
 
 ```text
 event.category : "authentication" and event.outcome : "failure"
+```
 
-### 2. Immediately BELOW that, paste this:
-
-```markdown
 The rule monitors the `security-logs*` data view and generates an alert when a failed authentication event is detected.
 
 ## Alert Testing
 
 A test failed-login event was generated with:
 
-- Username: `alerttest`
-- Source IP: `192.168.1.100`
-- Event category: `authentication`
-- Outcome: `failure`
+* Username: `alerttest`
+* Source IP: `192.168.1.100`
+* Event category: `authentication`
+* Outcome: `failure`
 
 The Elastic detection rule successfully generated an alert for the test event.
 
@@ -99,29 +100,26 @@ A security analyst can use this type of monitoring to identify suspicious authen
 
 Through this project, I gained practical experience with:
 
-- SIEM concepts
-- Elasticsearch
-- Kibana
-- Elastic Security
-- Security log analysis
-- KQL
-- Detection rules
-- Security alerts
-- Docker-based deployment
-- Basic SOC monitoring workflow
+* SIEM concepts
+* Elasticsearch
+* Kibana
+* Elastic Security
+* Security log analysis
+* KQL
+* Detection rules
+* Security alerts
+* Docker-based deployment
+* Basic SOC monitoring workflow
 
 ## Future Improvements
 
-- Add Windows Event Logs
-- Add SSH authentication monitoring
-- Add brute-force detection
-- Add IP-based threat intelligence
-- Add automated alert notifications
-- Integrate additional security data sources
+* Add Windows Event Logs
+* Add SSH authentication monitoring
+* Add brute-force detection
+* Add IP-based threat intelligence
+* Add automated alert notifications
+* Integrate additional security data sources
 
-## Disclaimer
-
-This project was created as a local cybersecurity learning and demonstration environment. All testing was performed using controlled test data.
 ## Project Screenshots
 
 ### SIEM Dashboard
@@ -135,3 +133,7 @@ This project was created as a local cybersecurity learning and demonstration env
 ### Security Alert
 
 ![Security Alert](screenshots/alert.png)
+
+## Disclaimer
+
+This project was created as a local cybersecurity learning and demonstration environment. All testing was performed using controlled test data.
