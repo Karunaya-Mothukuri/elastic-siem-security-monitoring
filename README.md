@@ -60,3 +60,65 @@ The project uses the following KQL query:
 
 ```text
 event.category : "authentication" and event.outcome : "failure"
+
+### 2. Immediately BELOW that, paste this:
+
+```markdown
+The rule monitors the `security-logs*` data view and generates an alert when a failed authentication event is detected.
+
+## Alert Testing
+
+A test failed-login event was generated with:
+
+- Username: `alerttest`
+- Source IP: `192.168.1.100`
+- Event category: `authentication`
+- Outcome: `failure`
+
+The Elastic detection rule successfully generated an alert for the test event.
+
+## Project Workflow
+
+1. Create security log data
+2. Store logs in Elasticsearch
+3. Normalize security events
+4. Create a Kibana data view
+5. Build a security monitoring dashboard
+6. Create a failed-login detection rule
+7. Enable the detection rule
+8. Generate a test failed-login event
+9. Verify the generated security alert
+
+## Security Use Case
+
+This project represents a simplified SOC monitoring workflow.
+
+A security analyst can use this type of monitoring to identify suspicious authentication failures and investigate the associated usernames and source IP addresses.
+
+## Learning Outcomes
+
+Through this project, I gained practical experience with:
+
+- SIEM concepts
+- Elasticsearch
+- Kibana
+- Elastic Security
+- Security log analysis
+- KQL
+- Detection rules
+- Security alerts
+- Docker-based deployment
+- Basic SOC monitoring workflow
+
+## Future Improvements
+
+- Add Windows Event Logs
+- Add SSH authentication monitoring
+- Add brute-force detection
+- Add IP-based threat intelligence
+- Add automated alert notifications
+- Integrate additional security data sources
+
+## Disclaimer
+
+This project was created as a local cybersecurity learning and demonstration environment. All testing was performed using controlled test data.
