@@ -1,0 +1,24 @@
+# Environment files
+.env
+.env.*
+
+# Secrets and credentials
+secrets/
+*.key
+*.pem
+*.p12
+
+# Elasticsearch/Kibana local data
+data/
+elasticsearch-data/
+kibana-data/
+
+# Docker
+docker-compose.override.yml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
