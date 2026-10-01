@@ -119,6 +119,7 @@ Through this project, I gained practical experience with:
 * Add IP-based threat intelligence
 * Add automated alert notifications
 * Integrate additional security data sources
+
 ## Project Screenshots
 
 ### SIEM Dashboard
