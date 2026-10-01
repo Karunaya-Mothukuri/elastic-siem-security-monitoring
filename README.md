@@ -43,3 +43,20 @@ Failed Login Alert
 - Custom KQL detection rule
 - Failed authentication detection
 - Security alert generation
+## Dashboard
+
+The dashboard provides security monitoring views including:
+
+- Total login attempts
+- Failed vs successful logins
+- Top source IP addresses
+- Login activity over time
+
+## Detection Rule
+
+### Failed Login Detection
+
+The project uses the following KQL query:
+
+```text
+event.category : "authentication" and event.outcome : "failure"
